@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقعك الشخصي</title>
+
+  <!-- رابط ملف CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- زر تغيير اللغة -->
+  <div id="language-switcher">
+    <button id="arabic-btn" class="lang-btn active">العربية</button>
+    <button id="english-btn" class="lang-btn">English</button>
+  </div>
+
+  <!-- الواجهة الرئيسية -->
+  <div id="home" class="page">
+    <h1 id="welcome-text">مرحبا معجبي ماهركو!</h1>
+    <button id="nextButton">التالي</button>
+
+    <!-- الحاوية التي تحتوي على الأزرار الستة وعلبتا التواصل -->
+    <div id="footer-container">
+      <!-- الأزرار الستة لمنصة Kick -->
+      <a href="https://kick.com/maherco" target="_blank" class="kick-link" id="maherco-button">صفحة maherco على Kick</a>
+      <a href="https://kick.com/awsamco" target="_blank" class="kick-link" id="awsamco-button">صفحة awsamco على Kick</a>
+      <a href="https://kick.com/crystalco" target="_blank" class="kick-link" id="crystalco-button">صفحة Crystal على
+        Kick</a>
+      <a href="https://kick.com/tikriti" target="_blank" class="kick-link" id="tikriti-button">صفحة tikriti على Kick</a>
+      <a href="https://kick.com/hexawi" target="_blank" class="kick-link" id="hexawi-button">صفحة hexawi على Kick</a>
+      <a href="https://kick.com/jalta" target="_blank" class="kick-link" id="jalta-button">صفحة jalta على Kick</a>
+
+      <!-- علبتا التواصل -->
+      <div id="phone-box" class="contact-box">للتواصل: 0775509940</div>
+      <div id="email-box" class="contact-box">للتواصل: majdialhijazi04@gmail.com</div>
+    </div>
+  </div>
+
+  <!-- الواجهة الثانية -->
+  <div id="videos" class="page hidden">
+    <!-- رسالة التحذير -->
+    <div id="warning-message" class="warning-message">
+      عند مشاهدة أحدى الفيديوهات التالية قد يكون الشخص أو الأشخاص في حالة عصبية وقد يقومون بالسب والشتم فعليك تخطي هذا
+      الجزء، أو يقومون بمشاهدة مقاطع طويلة أو قصيرة على أي منصة وتحتوي أغاني أو النساء الكاسيات العاريات فعليك تخطي هذا
+      الجزء، أو يقومون بسماع الأغاني فعليك تخطي هذا الجزء، أو أي شيء محرم فعليك تخطي هذا...
+      <br><br>وشكرًا!
+    </div>
+
+    <!-- أزرار التنقل بين المجموعات -->
+    <div id="group-navigation">
+      <button id="prev-group-btn" class="nav-btn">&larr; السابق</button>
+      <span id="current-group">المجموعة 1</span>
+      <button id="next-group-btn" class="nav-btn">التالي &rarr;</button>
+    </div>
+
+    <!-- حاوية الفيديوهات -->
+    <div id="video-container" class="video-container"></div>
+  </div>
+
+  <!-- رابط ملف JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>

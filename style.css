@@ -1,0 +1,232 @@
+/* تصميم عام */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.page {
+  display: none;
+  padding: 50px;
+  color: white;
+}
+
+.page:not(.hidden) {
+  display: block;
+}
+
+#home {
+  background: url('https://i.postimg.cc/ZqHSTGfm/image.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+#videos {
+  background: url('https://i.postimg.cc/tgJj4r8V/Background-Eraser.png') no-repeat center center/cover;
+  height: 100vh;
+}
+
+/* زر تغيير اللغة */
+#language-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.lang-btn {
+  background-color: #007BFF;
+  color: white;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.lang-btn.active {
+  background-color: #0056b3;
+}
+
+.lang-btn:hover {
+  transform: scale(1.05);
+}
+
+/* تصميم جملة "مرحبا معجبي ماهركو" */
+#welcome-text {
+  color: white; /* لون النص أبيض */
+  font-size: 2.5em; /* حجم النص كبير */
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #007BFF, 0 0 40px #007BFF; /* توهج أبيض وأزرق */
+  margin-top: 15%; /* تم تخفيض القيمة لرفع الجملة للأعلى */
+}
+
+/* تصميم الزر "التالي" */
+#nextButton {
+  position: absolute;
+  bottom: 200px; /* تم تخفيض القيمة لرفع الزر للأعلى */
+  left: 50%;
+  transform: translateX(-50%) scale(1); /* توسيط الزر مع الحجم الطبيعي */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007BFF; /* خلفية زرقاء غامقة */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* تأثير عند التحووم */
+}
+
+#nextButton:hover {
+  background-color: #0056b3; /* تغيير لون الخلفية عند التحووم */
+  transform: translateX(-50%) scale(1.05); /* توسيط الزر مع التكبير عند التحووم */
+}
+
+/* تصميم الحاوية التي تحتوي على الأزرار الستة وعلبتا التواصل */
+#footer-container {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* السماح بتقسيم الصف إذا كانت الشاشة صغيرة */
+}
+
+/* تصميم الأزرار الستة لمنصة Kick */
+.kick-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 14px; /* تقليل حجم الخط */
+  font-weight: bold;
+  padding: 8px 12px;
+  background-color: #007BFF; /* خلفية زرقاء غامقة */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* تأثير عند التحووم */
+}
+
+.kick-link:hover {
+  background-color: #0056b3; /* تغيير لون الخلفية عند التحووم */
+  transform: scale(1.05); /* تكبير الزر قليلاً عند التحووم */
+}
+
+/* تصميم علبتا التواصل */
+.contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007BFF; /* خلفية زرقاء غامقة */
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: white;
+  font-size: 14px; /* تقليل حجم الخط */
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* تأثير عند التحووم */
+}
+
+.contact-box:hover {
+  background-color: #0056b3; /* تغيير لون الخلفية عند التحووم */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* ظل أقوى عند التحووم */
+}
+
+/* استعلامات وسائط لتحسين التصميم على الهواتف المحمولة */
+@media (max-width: 768px) {
+  /* تصغير حجم الجملة الرئيسية */
+  #welcome-text {
+    font-size: 1.8em; /* تقليل حجم الخط أكثر */
+    margin-top: 25%; /* تعديل المسافة العلوية */
+  }
+
+  /* تعديل موقع وزر "التالي" ليكون أصغر وأقرب إلى اليمين قليلاً */
+  #nextButton {
+    position: static; /* إزالة الموقع المطلق */
+    margin: 20px auto 20px 15cm; /* إضافة مسافات علوية وسفلية مع إزاحة إلى اليمين */
+    display: block; /* جعل الزر يأخذ مساحة كتلة */
+    width: 70%; /* تصغير عرض الزر إلى 70% من الشاشة */
+    max-width: 250px; /* تحديد عرض أقصى للزر */
+    text-align: center; /* توسيط النص داخل الزر */
+    order: -1; /* جعل الزر يظهر أولاً في الترتيب */
+  }
+
+  /* تصغير حجم الأزرار الستة والعُلب */
+  .kick-link, .contact-box {
+    font-size: 10px; /* تقليل حجم الخط أكثر */
+    padding: 6px 10px; /* تقليل الحجم */
+    width: 100%; /* جعل كل زر يأخذ عرض الصف بالكامل */
+    text-align: center; /* توسيط النص داخل الزر */
+  }
+
+  /* تحسين ترتيب العناصر في الحاوية السفلية */
+  #footer-container {
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    gap: 10px; /* زيادة المسافة بين العناصر */
+    width: 90%; /* تقليل عرض الحاوية لتتناسب مع الشاشة */
+    margin: 0 auto; /* توسيط الحاوية */
+  }
+}
+
+/* تصميم رسالة التحذير */
+.warning-message {
+  background-color: #ffcccc; /* خلفية حمراء فاتحة */
+  color: #cc0000; /* نص أحمر داكن */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1em; /* تقليل حجم الخط */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+
+/* تصميم أزرار التنقل بين المجموعات */
+#group-navigation {
+  margin: 20px 0;
+}
+
+.nav-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* تأثير عند التحووم */
+}
+
+.nav-btn:hover {
+  background-color: #0056b3; /* تغيير لون الخلفية عند التحووم */
+  transform: scale(1.05); /* تكبير الزر قليلاً عند التحووم */
+}
+
+/* تصميم حاوية الفيديوهات */
+.video-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-column {
+  width: 30%; /* كل عمود يأخذ 30% من العرض */
+  margin-bottom: 20px;
+}
+
+.video-item {
+  background-color: #007BFF; /* لون الخلفية للأزرار */
+  border: 1px solid #0056b3; /* حدود زرقاء غامقة */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: black; /* لون النص أسود */
+  font-weight: bold; /* خط غامق */
+}
+
+.video-item:hover {
+  background-color: #0056b3; /* تغيير لون الخلفية عند التحووم */
+  transform: scale(1.05); /* تكبير الزر قليلاً عند التحووم */
+}
