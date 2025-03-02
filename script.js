@@ -1,5 +1,6 @@
 // قائمة الفيديوهات (33 فيديو)
-const videos = [
+const videos =
+[
   { url: "https://youtu.be/MOh24PJAPas", titleAr: "فيديو رقم 1", titleEn: "Video Number 1" },
   { url: "https://youtu.be/qJmwlRDy-rE", titleAr: "فيديو رقم 2", titleEn: "Video Number 2" },
   { url: "https://youtu.be/9_x4fgfXilE", titleAr: "فيديو رقم 3", titleEn: "Video Number 3" },
@@ -33,6 +34,8 @@ const videos = [
   { url: "https://youtu.be/MJS5gxPPKHU", titleAr: "فيديو رقم 31", titleEn: "Video Number 31" },
   { url: "https://youtu.be/2vEUp0AiadM", titleAr: "فيديو رقم 32", titleEn: "Video Number 32" },
   { url: "https://youtu.be/9jGy4wRUaMM", titleAr: "فيديو رقم 33", titleEn: "Video Number 33" }
+  { url: "https://youtu.be/xSOb208gJHQ", titleAr: "فيديو رقم 34", titleEn: "Video Number 34" }
+  
 ];
 
 // نصوص اللغتين
