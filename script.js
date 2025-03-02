@@ -34,7 +34,16 @@ const videos =
   { url: "https://youtu.be/MJS5gxPPKHU", titleAr: "فيديو رقم 31", titleEn: "Video Number 31" },
   { url: "https://youtu.be/2vEUp0AiadM", titleAr: "فيديو رقم 32", titleEn: "Video Number 32" },
   { url: "https://youtu.be/9jGy4wRUaMM", titleAr: "فيديو رقم 33", titleEn: "Video Number 33" },
-  { url: "https://youtu.be/xSOb208gJHQ", titleAr: "فيديو رقم 34", titleEn: "Video Number 34" }
+  { url: "https://youtu.be/xSOb208gJHQ", titleAr: "فيديو رقم 34", titleEn: "Video Number 34" },
+  { url: "https://youtu.be/6QO-0fGsZME", titleAr: "فيديو رقم 35", titleEn: "Video Number 35" },
+  { url: "https://youtu.be/oRwdNu3F1os", titleAr: "فيديو رقم 36", titleEn: "Video Number 36" },
+  { url: "https://youtu.be/KVeB26nSaw8", titleAr: "فيديو رقم 37", titleEn: "Video Number 37" },
+  { url: "https://youtu.be/M_7fK8XRDDU", titleAr: "فيديو رقم 38", titleEn: "Video Number 38" },
+  { url: "https://youtu.be/rLYCO1BWW28", titleAr: "فيديو رقم 39", titleEn: "Video Number 39" },
+  { url: "https://youtu.be/nRV6vAPmNf4", titleAr: "فيديو رقم 40", titleEn: "Video Number 40" },
+  { url: "https://youtu.be/IVtD9eL3N-U", titleAr: "فيديو رقم 41", titleEn: "Video Number 41" },
+  { url: "https://youtu.be/K5Mf53FdsV8", titleAr: "فيديو رقم 42", titleEn: "Video Number 42" },
+  { url: "https://youtu.be/JAxl7NGLlCQ", titleAr: "فيديو رقم 43", titleEn: "Video Number 43" }
   
 ];
 
