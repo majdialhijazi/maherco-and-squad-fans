@@ -33,7 +33,7 @@ const videos =
   { url: "https://youtu.be/m928uffZx5Y", titleAr: "فيديو رقم 30", titleEn: "Video Number 30" },
   { url: "https://youtu.be/MJS5gxPPKHU", titleAr: "فيديو رقم 31", titleEn: "Video Number 31" },
   { url: "https://youtu.be/2vEUp0AiadM", titleAr: "فيديو رقم 32", titleEn: "Video Number 32" },
-  { url: "https://youtu.be/9jGy4wRUaMM", titleAr: "فيديو رقم 33", titleEn: "Video Number 33" }
+  { url: "https://youtu.be/9jGy4wRUaMM", titleAr: "فيديو رقم 33", titleEn: "Video Number 33" },
   { url: "https://youtu.be/xSOb208gJHQ", titleAr: "فيديو رقم 34", titleEn: "Video Number 34" }
   
 ];
